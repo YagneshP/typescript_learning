@@ -6,4 +6,4 @@
 
 - set for tsconfig.json 
 
-` npx tsc `
+` npx tsc --init`
