@@ -11,3 +11,9 @@
 - set for tsconfig.json 
 
 ` npx tsc --init`
+
+### How to specify type 
+
+- ` <variable> : <type> `
+
+ex: ` let userName : string = 'Yagnesh' `
