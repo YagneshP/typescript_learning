@@ -20,3 +20,16 @@ const myPerson: {
   firstName: 'Yagnesh',
   lastName: 'Parekh'
 };
+
+// with interface keyword
+
+interface Person {
+  firstName: string,
+  lastName: string
+}
+
+
+const anotherPerson: Person = {
+  firstName: 'Jon',
+  lastName: 'Doe'
+}
