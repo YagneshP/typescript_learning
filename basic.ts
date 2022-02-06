@@ -37,3 +37,18 @@ const anotherPerson: Person = {
 // const newArr = [{a:'A', b:'B', c:'C'}, {d:'D', e:'E'}];
 
 // const bArr = newArr.map(el => el.forEach()) // just checking if you try to excute array method on object then typescript gives you erro
+
+
+
+// type aliases
+type UserInfo = {
+  name : string,
+  last : string
+}
+
+function printUserInfo(info: UserInfo): void {
+  console.log(`UserName : ${info.name}`);
+  console.log(`Last Name : ${info.last}`);
+}
+
+printUserInfo({name: 'John', last: 'Doe'});
