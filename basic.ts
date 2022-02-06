@@ -33,3 +33,7 @@ const anotherPerson: Person = {
   firstName: 'Jon',
   lastName: 'Doe'
 }
+
+// const newArr = [{a:'A', b:'B', c:'C'}, {d:'D', e:'E'}];
+
+// const bArr = newArr.map(el => el.forEach()) // just checking if you try to excute array method on object then typescript gives you erro
