@@ -26,4 +26,19 @@ function Adder(num: number): AddNumber{
   } 
 };
 
-console.log(Adder(2)())
+console.log(Adder(2)());
+
+
+// callSignature
+
+// - function can have properties but type function doesnt allow for declaring propeties, so we need to type in 'object'
+
+type functionWithProp = {
+  description: string, 
+  (a:string):string // using  : instead of =>
+}
+
+function doSomething(fn : functionWithProp): string {
+  return `${fn.description} and call ${fn('a')}`
+}
+
