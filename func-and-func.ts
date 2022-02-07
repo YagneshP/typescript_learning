@@ -42,3 +42,36 @@ function doSomething(fn : functionWithProp): string {
   return `${fn.description} and call ${fn('a')}`
 }
 
+// function overload
+
+
+interface Coordinate {
+  x: number,
+  y: number
+};
+
+
+// function parseCoordinateWithObject(obj: Coordinate): Coordinate {
+//   return { ...obj }
+// }
+
+// function parseCoordinateWithNumbers(x: number, y: number): Coordinate {
+//   return { x, y }
+// };
+
+function parseCoordinate(obj: Coordinate): Coordinate;
+function parseCoordinate(x: number, y: number): Coordinate;
+
+function parseCoordinate (arg1: unknown, arg2?: unknown): Coordinate {
+  let coords: Coordinate = {
+    x: 0,
+    y: 0
+  }
+  if(typeof arg1 === 'object') {
+    coords = {...arg1 as Coordinate}
+  } else {
+    coords = {x : arg1 as number, y : arg2 as number}
+  }
+
+  return coords
+}
