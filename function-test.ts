@@ -1,3 +1,5 @@
-import addNumber from "./function";
+import addNumber, {addString} from "./function";
 
-addNumber(1, 2);
+console.log(addNumber(1, 2));
+
+console.log(addString('Yagnesh', 'Parekh'));
