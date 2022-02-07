@@ -52,3 +52,5 @@ function printUserInfo(info: UserInfo): void {
 }
 
 printUserInfo({name: 'John', last: 'Doe'});
+
+
