@@ -14,3 +14,16 @@ function numberMutations (numbers: number[], cb : Mutations) : number[] {
 }
 
 console.log(numberMutations([1,2,3,4,5,6], (v) => v*10));
+
+
+//function returning functions
+
+type AddNumber = () => number;
+
+function Adder(num: number): AddNumber{
+  return function addOne(): number {
+    return 1 + num;
+  } 
+};
+
+console.log(Adder(2)())
