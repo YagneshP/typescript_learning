@@ -19,3 +19,15 @@ Check [primitive.ts](primitive.ts)
 ### Array
 
 Check [array.ts](array.ts)
+
+### any
+
+- when you don't want to check for type you can assign type any
+
+### Function
+
+check [function.ts](function.ts)
+
+### optional
+
+check [optional.ts](optional.ts)
