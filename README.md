@@ -12,8 +12,6 @@
 
 ` npx tsc --init`
 
-### How to specify type 
+### Primitive types
 
-- ` <variable> : <type> `
-
-ex: ` let userName : string = 'Yagnesh' `
+Check [primitive.ts](primitive.ts)
