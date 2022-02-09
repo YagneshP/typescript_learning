@@ -15,3 +15,7 @@
 ### Primitive types
 
 Check [primitive.ts](primitive.ts)
+
+### Array
+
+Check [array.ts](array.ts)
