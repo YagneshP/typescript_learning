@@ -17,7 +17,7 @@ let sedan = new Car('Honad', 'Accord', 2019);
 console.log('sedan:',sedan);
 
 // wrong type property also give error
-// let wrongSedan = new Car(2019, 'Hyundai', 'i20'); // make it right?  (ref line 16)
+// let wrongSedan = new Car(2019, 'Hyundai', 'i20'); //🚧 make it right?  (ref line 16)
 
 
 
