@@ -30,4 +30,8 @@ check [function.ts](function.ts)
 
 ### optional
 
-check [optional.ts](optional.ts)
+* check [optional.ts](optional.ts)
+
+### class
+
+* check [carClass-ts.ts](carClass-ts.ts)

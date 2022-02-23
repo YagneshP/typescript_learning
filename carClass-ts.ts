@@ -1,7 +1,9 @@
 class Car {
+  // declareing all fields' types
   make: string;
   model: string;
   year: number;
+  // also declaring types for params which makes it verbose
   constructor(make: string, model: string, year: number) {
     this.make = make;
     this.model = model;
@@ -23,3 +25,10 @@ console.log('sedan:',sedan);
 
 // if no method found in your class, gives error
 // wrongSedan.activeTurnSignal("right");  //🚧 make it right? (ref line 10)
+
+
+
+/**
+ * Access Modifier
+ */
+
