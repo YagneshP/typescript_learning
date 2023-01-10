@@ -1,20 +1,40 @@
 # Typescript Notes
 
-- Install Typescript to The Project (dev)
+##### Install typcript globally at your machine
 
-` npm install typescript `
+`npm i -g typescript`
 
-- Install TS-Node (dev)
+you can run now typescript from your command line with `tsc` command
+
+(tsc - **T**ype **S**cript **C**ompiler)
+
+check your typescript version with `--version` flag
+
+`tsc --version`
+
+##### Install Typescript to The Project (dev)
+
+`npm install typescript`
+
+##### Install TS-Node (dev)
 
 `npm install ts-node`
 
-- set for tsconfig.json 
+##### set for tsconfig.json
 
 ` npx tsc --init`
 
+- tsconfig.json is used for settings that tells Typescript to how to compile and analyze the code
+
+### Type Anotation
+
+When the variable doesnt have intial value , Typescript won't infer the type for that variable , and by default it will assign the type `any` to that variable. This Variable are **\*evolving any.** \*
+
+Check [evolvingAny.ts]()
+
 ### Primitive types
 
-Check [primitive.ts](primitive.ts)
+Check [primitive.ts]()
 
 ### Array
 
@@ -30,8 +50,8 @@ check [function.ts](function.ts)
 
 ### optional
 
-* check [optional.ts](optional.ts)
+- check [optional.ts](optional.ts)
 
 ### class
 
-* check [carClass-ts.ts](carClass-ts.ts)
+- check [carClass-ts.ts](carClass-ts.ts)
