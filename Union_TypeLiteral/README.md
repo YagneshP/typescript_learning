@@ -13,3 +13,7 @@ Like, here the methods which are present in both `number` and `string` type will
 You can assign type in any order.
 
 For more reference see : [union.ts](union.ts)
+
+## Narrowing
+
+You can narrow down the types by assigning, using condition, typeof check.
