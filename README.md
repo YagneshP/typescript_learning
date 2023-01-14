@@ -30,7 +30,14 @@ check your typescript version with `--version` flag
 
 When the variable doesnt have intial value , Typescript won't infer the type for that variable , and by default it will assign the type `any` to that variable. This Variable are **\*evolving any.** \*
 
-Check [evolvingAny.ts](https://github.com/YagneshP/typescript_learning/blob/main/evolvingAny.ts)
+Check [evolvingAny.ts ]()
+
+Typescript allow to declaring the type of the unassigned variable. this is called 'type annotation'
+
+```typescript
+let rocker: string;
+// variableName (colon :) type
+```
 
 ### Primitive types
 
