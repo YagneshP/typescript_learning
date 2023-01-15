@@ -37,3 +37,13 @@ With `const` keyword the type for the variable become its type.
 if it is `false` , Typescript add union type `null|undefined` for the variable.
 
 It is best practice to set it to be `true`
+
+### Variable without intial values
+
+if the variable has no intial value, and if you access the method for its type, typescript will give special error.
+
+refer : [unassign.ts](unassign.ts)
+
+## TypeAliases
+
+Typescript allow `type aliases` for assigning simple name for reused types.
