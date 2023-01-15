@@ -17,3 +17,23 @@ For more reference see : [union.ts](union.ts)
 ## Narrowing
 
 You can narrow down the types by assigning, using condition, typeof check.
+
+For more reference see : [narrow.ts](narrow.ts)
+
+## Literal Types
+
+```typescript
+const literal_value = "Yagnesh";
+```
+
+Here the type for the `literal_value` is specifically 'Yagnesh'.
+With `const` keyword the type for the variable become its type.
+**primitive Types** are union to literal type, meaning here 'string' is union for the 'Yagnesh' type.
+
+### Strict Null checking
+
+`strictNullChecks` allows how to define 'null' and 'undefined' type to variable.
+
+if it is `false` , Typescript add union type `null|undefined` for the variable.
+
+It is best practice to set it to be `true`
