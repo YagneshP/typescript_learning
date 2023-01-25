@@ -39,6 +39,10 @@ let rocker: string;
 // variableName (colon :) type
 ```
 
+### Object
+
+You can read more about [Objects](Objects/README.md)
+
 ### Primitive types
 
 Check [primitive.ts]()
