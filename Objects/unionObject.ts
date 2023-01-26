@@ -47,3 +47,13 @@ poem.name; // This is ok beacuse both object type has 'name' prop
 // poem.pages  This wont access 'pages' prop because 'page' is not available in both object types
 
 // Benefit of that you can narrow down the object based on property exists in object
+
+// you can narrow down with typecheck by using 'in' operator
+
+if ("pages" in poem) {
+  // You can not use poem.pages in typescript because you can not access the 'pages' prop in all union type object
+  // using in operator
+  poem.pages;
+} else {
+  poem.rhymes;
+}
