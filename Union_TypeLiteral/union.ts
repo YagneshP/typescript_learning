@@ -34,3 +34,22 @@ function printIds(id: number | string) {
 }
 
 //Array.isArray also use for Narrowing if one of the type is Array
+
+type mehsana = "nagalpur" | "palavasna" | "modhera chowkdi";
+type pachot = "pachot";
+
+let mehsanaCity: mehsana | pachot = "nagalpur";
+
+type modheraBusDepo = "modhera chowkdi";
+
+function findDepo(place: mehsana & modheraBusDepo) {
+  return `Mehsana bus depo at ${place}`;
+}
+
+/**
+ * This gives you error because "nagalpur" e `modheraBusDepo` no type nathi , so in Intersection Type ma you required common values should be present
+ */
+// let whereIsDepo = findDepo("nagalpur")
+
+// But here it will work,  you can also "nagalpur" type in `modehraBusDepo`
+let whereIsDepo = findDepo("modhera chowkdi");
